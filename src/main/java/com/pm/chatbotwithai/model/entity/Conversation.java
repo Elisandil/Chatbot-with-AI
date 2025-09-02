@@ -45,16 +45,14 @@ public class Conversation {
     @Column(name = "last_activity")
     private LocalDateTime lastActivity;
 
-    // Default constructor
+    // Constructor
     public Conversation() {}
 
-    // Constructor with userId
     public Conversation(String userId) {
         this.userId = userId;
         this.lastActivity = LocalDateTime.now();
     }
 
-    // Constructor with userId and title
     public Conversation(String userId, String title) {
         this.userId = userId;
         this.title = title;
